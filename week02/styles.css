@@ -1,0 +1,65 @@
+body {
+background-color: #93ff75;
+font-family: Calibri;
+font-size: 25px;
+font-weight: 400;
+color: #333
+}
+
+/*this is a descendant selector*/
+
+header h1 {
+    font-family: Georgia, serif;
+    text-align: center; /*this is a new css property!*/
+}
+table {
+    display: flex; /*allows the table itself to move*/
+    justify-content: center; /*centers the table horizontally*/
+    text-align: center;
+    td, th {
+ border: 2px solid black;
+}
+
+}
+
+nav {
+    background-color: #FFF;
+    /*padding defines the space between an item and its border*/
+    padding: 20px; /*so there will be 20px between the items and border!*/
+    width:500px;
+    font-family: Georgia, serif;
+}
+nav a {
+    margin: 15px;
+    color: blue; /*defines the color of the text in nav a*/
+    text-decoration: none;
+}
+nav a:hover {
+    color: magenta;
+}
+ p1 {
+    text-align: center; /*this is a new css property!*/
+ }
+main img.detail {
+    width: 500px;
+}
+main img.installation {
+    width: 100px;
+}
+main a {
+    color: blue;
+    text-decoration: none;
+}
+main a:hover {
+    color: magenta;
+}
+
+footer h1 {
+    font-size: 25px;
+    font-weight: 20px;
+}
+footer h2 {
+    font-size: 15px;
+    font-weight: 10px;
+    text-align: center; /*this is a new css property!*/
+}
