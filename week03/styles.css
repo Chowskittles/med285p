@@ -1,0 +1,58 @@
+body {
+        font-family: "Handjet", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings:
+          "ELGR" 1,
+          "ELSH" 2; 
+          background-image: url(images/forest.gif);
+          background-attachment: fixed;
+          /*background-repeat: no-repeat;*/
+}
+
+#wrapper /*hashtag is used because wrapper is id; if it were class, would use '.'*/ {
+ /*id's use hash tags*/
+/*wrappers are a div that wrap around everything*/ 
+background-color: aqua;
+/*following values work clockwise, starting from top*/
+padding: 40px;
+width: 80%;
+margin: 100px auto 100px auto; 
+}
+
+/*NAVIGATION BAR STYLES*/
+nav {
+    background-color: #FFF;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200px;
+}
+
+nav a {
+    margin: 0px 60px 0px 60px; /*20 px on right and left*/
+    /*making rule for links in nav a*/
+    color: #000;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+}
+
+img.enlargement {
+    height: 400px;
+    width: auto;
+
+}
+
+img.thumbnail {
+    height: 80px;
+    width: auto;
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
