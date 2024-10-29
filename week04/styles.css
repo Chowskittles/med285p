@@ -1,0 +1,114 @@
+body{
+
+    background-color:  #6dff63;
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*GROUPING EXAMPLES FOR BULK EDITING*/
+/*
+header, nav, main, footer {
+    padding: 22px;
+    }
+/* h1, h2, h3, h4, h5 {
+    margin: 0px;
+    } */
+
+#wrapper {
+    background-color:   #3d6627;
+    width: 80%;
+    margin: 0px auto 0px auto;
+    border: solid 2px #234213;
+    padding: 40px;
+}
+
+body {
+    background-image: url(images/background_picture.jpg);
+          background-attachment: fixed;
+}
+
+nav {
+    background-color: #8bcc68;
+    padding: 5px;
+    text-align: center;
+    font-weight: 800;
+    }
+
+nav a{
+    color: black;
+    text-decoration: none;
+margin: 0px 20px;
+background-color: #569c7e;
+padding: 10px;
+border: solid 4px #000;
+}
+
+nav a:hover {
+    background-color: azure;
+    border: solid 6px #000;
+}
+
+main {
+    padding: 22px;
+}
+
+ /*article.intro img.introThumb {
+    can add border, edit images within this class
+    border: solid 10px #F00 makes intro image border red
+    background-color: #0F0 only way to see background image is if padding is in image 
+    padding: 10px
+    margin: 10px this will be outside the border
+    box-shadow: 4px 4px 2px 0 rgba(0, 0, 0, 0.5);
+    filter: grayscale(100%);
+
+}*/
+
+/* this will make hovering over the image change the background color
+article.intro img.introThumb:hover {
+background-color: #F00;
+}
+*/
+
+.gallery{
+	display: inline-block;
+	border: 1px solid hs1(0, 0%, 50%);
+	margin: 5px;
+	width: 200px;
+}
+
+.gallery .description{
+	padding: 10px;
+	text-align: center;
+}
+
+.gallery:hover{
+	border: 1px solid hsl(0, 0%, 20%);
+}
+
+.gallery img{
+	width: 100%;
+	height: auto;
+}
+
+.history_pictures{
+	display: inline-block;
+	border: 1px solid hs1(0, 0%, 50%);
+	margin: 5px;
+	width: 200px;
+}
+
+.history_pictures .description{
+	padding: 10px;
+	text-align: center;
+}
+
+.history_pictures:hover{
+	border: 1px solid hsl(0, 0%, 20%);
+}
+
+.history_pictures img{
+	width: 100%;
+	height: auto;
+}
+
