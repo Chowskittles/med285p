@@ -1,0 +1,136 @@
+/*border-box fix*/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*this is so i can use two fonts located in the same folder as these html and css files*/
+@font-face {
+    font-family: 'RubikIso-Regular';
+    src: url(RubikIso-Regular.ttf);
+}
+@font-face {
+    font-family: 'Handjet';
+    src: url(Handjet.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #090933;
+}
+
+/* display grid so children can be in rows and cols*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr)); /*the min determines minimum width for rows, maximum width*/
+    grid-template-rows: minmax(0, 1fr);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container > * {
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(94, 68, 172);
+    grid-column: 1 / 13; /*makes this element go from grid line 1 to 13*/
+}
+
+h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: RubikIso-Regular;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase;
+    color: black;
+    font-family: RubikIso-Regular;
+}
+
+nav{
+    font-family: RubikIso-Regular;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-weight: 800;
+    background: rgb(96, 118, 139);
+    grid-column: 1 / 10;
+    grid-row: 2 / 3;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    margin: 0 40px;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    color: red;
+}
+
+main, aside, body {
+    font-family: Handjet;
+    color: black;
+}
+
+main { 
+    background: skyblue;
+    grid-column: 1 / 13;
+    grid-row: 3 / 11;
+}
+
+main a {
+    text-decoration: none;
+    color: rgb(42, 71, 158);
+}
+
+main a:hover {
+    color: red;
+}
+
+aside {
+    background: gold;
+    grid-column: 10 / 13;
+    grid-row: 2 / 3;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*determining that an image will fade in from 0% to 100%*/
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.textFade {
+    opacity: 0; /*will be hidden at first*/
+    animation: fadeIn 2s forwards; /*have to define how & how long the fade will happen*/
+}
+
+footer {
+    background: rgb(94, 68, 172);
+    grid-column: 1 / 13;
+    grid-row: 11 / 13;
+    font-family: Handjet;
+    color: white;
+}
+
+/*styling input elements*/
+.buttons label{
+    display: block; /*puts each button & string on new line*/
+    margin: 5px;
+}
+
+.storyCheckboxes label {
+    display: block;
+    margin: 5px;
+}
