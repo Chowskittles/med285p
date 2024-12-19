@@ -1,0 +1,69 @@
+<!--Edited JS example: https://www.w3schools.com/js/tryit.asp?filename=tryjs_objects_variable-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Experiment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Explore What JavaScript Can Do</h1>
+</header>
+
+<main>
+  <section class="interactive-section">
+    <p id="demo">Click the button to see the magic!</p>
+    <button id="changeButton" type="button">Change Text & Style</button>
+  </section>
+
+  <section class="fun-section">
+    <h2>Dynamic Background Color</h2>
+    <button id="bgButton" type="button">Change Background</button>
+  </section>
+
+  <section class="image-section">
+    <h2>Add an Image</h2>
+    <button id="imageButton" type="button">Add Image</button>
+    <div id="imageContainer"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Charley McLean | Hunter College MEDP 285 Fall 2024</p>
+</footer>
+
+<script>
+  // Change Text and Style
+  document.getElementById("changeButton").addEventListener("click", () => {
+    const demo = document.getElementById("demo");
+    demo.innerHTML = "Surprise!";
+    demo.style.color = "#4CAF50";
+    demo.style.fontWeight = "bold";
+    demo.style.fontSize = "1.5rem";
+  });
+
+  // Change Background Color
+  document.getElementById("bgButton").addEventListener("click", () => {
+    const colors = ["#FFCDD2", "#BBDEFB", "#C8E6C9", "#FFF9C4", "#D1C4E9"];
+    document.body.style.backgroundColor =
+      colors[Math.floor(Math.random() * colors.length)];
+  });
+
+  // Add Image
+  document.getElementById("imageButton").addEventListener("click", () => {
+    const imageContainer = document.getElementById("imageContainer");
+    if (!imageContainer.querySelector("img")) {
+      const img = document.createElement("img");
+      img.src = "images/kamemaru.jpg"; // Replace with your image path
+      img.alt = "Mascot of Kameoka, Japan";
+      imageContainer.appendChild(img);
+    }
+  });
+</script>
+
+</body>
+</html>
