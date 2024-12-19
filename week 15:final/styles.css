@@ -1,0 +1,131 @@
+/* used 'em' length for font sizing - em dictates font size relative to the font size of an element. for example, 2em is 2 times the normal size */
+/* https://www.w3schools.com/cssref/css_units.php */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* a nerdy, sci-fi font */
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('SpaceGrotesk-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: 'SpaceGrotesk', Arial, sans-serif; /* https://fonts.google.com/share?selection.family=Space+Grotesk:wght@300..700 */
+    background-color: #121212; 
+    color: #ffffff;
+    padding: 20px;
+    background-image: url('images/siteBackground.gif'); /* mysterious vibe */
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ensuring body takes up at least the full viewport height */
+    /* https://www.w3schools.com/css/css_rwd_viewport.asp */
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    flex: 1; /* letting the container take available space */
+    background-color: #555555; 
+    padding: 20px; 
+    border-radius: 10px; /* rounded corners */
+}
+
+header {
+    margin-bottom: 20px;
+    background-color: #333333; 
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em; /* see resource for em length unit at top */
+    margin-bottom: 10px;
+    color: #ffffff; /* for high contrast */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #f39c12; 
+}
+
+nav {
+    margin-bottom: 30px;
+    background-color: #f39c12; 
+    padding: 10px;
+}
+
+nav a {
+    color: #121212; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em; 
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffffff; 
+}
+
+main {
+    margin-bottom: 40px; 
+    background-color: #444444; /* for contrast */
+    padding: 20px;
+    border-radius: 10px; /* rounded corners */
+}
+
+main a {
+    color: #2f849c; 
+    text-decoration: underline;
+}
+
+main a:hover {
+    color: #db1626; 
+    text-decoration: underline; 
+}
+
+
+#planet-canvas {
+    margin: 0 auto;
+    max-width: 100%;
+    display: block; /* to center the canvas */
+    margin-bottom: 20px; /* space between canvas and planet details */
+}
+
+#planet-details {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+button {
+    font-family: 'SpaceGrotesk', Arial, sans-serif;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #f39c12;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    font-size: 0.8em;
+    color: 'black';
+    margin-top: 40px;
+    text-align: center; 
+    padding: 10px 0;
+    background-color: #f39c12; /* matched color with nav */
+}
