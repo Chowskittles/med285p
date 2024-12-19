@@ -1,0 +1,54 @@
+body {
+    background-color: #6dff63;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(images/forestGreen.jpg);
+    background-attachment: fixed;
+}
+
+#wrapper {
+    background-color: #3d6627;
+    width: 80%;
+    margin: 0 auto;
+    border: solid 2px #234213;
+    padding: 40px;
+}
+
+nav {
+    background-color: #8bcc68;
+    padding: 5px;
+    text-align: center;
+    font-weight: 800;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    background-color: #569c7e;
+    padding: 10px;
+    border: solid 4px #000;
+}
+
+nav a:hover {
+    background-color: azure;
+    border: solid 6px #000;
+}
+
+main {
+    padding: 22px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
